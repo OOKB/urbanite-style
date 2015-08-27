@@ -39,6 +39,18 @@
   font-weight: normal;
 }
 /** variables **/
+.white {
+  color: #ffffff;
+}
+.red {
+  color: #aa1824;
+}
+.yellow {
+  color: #ffd400;
+}
+.black {
+  color: #000000;
+}
 .urb-red {
   color: #aa1824;
   border-color: #aa1824;
