@@ -263,7 +263,8 @@ body {
 .align-center,
 .center-align,
 .aligncenter,
-.centeralign {
+.centeralign,
+.center {
   text-align: center;
 }
 .text-right,
@@ -273,7 +274,8 @@ body {
 .align-right,
 .right-align,
 .alignright,
-.rightalign {
+.rightalign,
+.right {
   text-align: right;
 }
 .text-left,
@@ -283,7 +285,8 @@ body {
 .align-left,
 .left-align,
 .alignleft,
-.leftalign {
+.leftalign,
+.left {
   text-align: left;
 }
 /* columnar stuff */
