@@ -86,6 +86,37 @@
   visibility: hidden;
   display: none;
 }
+/** mini CSS modules **/
+.mlrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.z999 {
+  z-index: 999;
+}
+.fsx2 {
+  font-size: 200%;
+}
+.pb2 {
+  padding-bottom: 1rem;
+}
+.allcaps,
+.uppercase {
+  text-transform: uppercase;
+}
+.fullwidth,
+.w100 {
+  width: 100%;
+}
+.cover {
+  margin: 0;
+  padding: 0;
+}
+.lead1,
+.lead2,
+.lead3 {
+  font-size: 112.5%;
+}
 .border-top {
   border-top-style: solid;
   border-top-width: 1px;
@@ -129,70 +160,6 @@
 }
 .not-rounded {
   border-radius: 0;
-}
-/** Universal **/
-html {
-  box-sizing: border-box;
-}
-* {
-  box-sizing: inherit;
-  position: relative;
-}
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
-}
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/** mini CSS modules **/
-.mlrauto {
-  margin-left: auto;
-  margin-right: auto;
-}
-.z999 {
-  z-index: 999;
-}
-.fsx2 {
-  font-size: 200%;
-}
-.pb2 {
-  padding-bottom: 1rem;
-}
-.allcaps,
-.uppercase {
-  text-transform: uppercase;
-}
-.fullwidth,
-.w100 {
-  width: 100%;
-}
-.cover {
-  margin: 0;
-  padding: 0;
-}
-.lead1,
-.lead2,
-.lead3 {
-  font-size: 112.5%;
 }
 /** grid **/
 .columns {
@@ -330,39 +297,38 @@ h6 {
     margin-left: calc(100%);
   }
 }
-/** styling! **/
-.simple-story h1,
-.simple-story h2,
-.simple-story h3,
-.simple-story h4,
-.simple-story h5,
-.simple-story h6,
-.simple-story p,
-.simple-story .mw48rem {
-  width: 45rem;
+/** Universal **/
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+  position: relative;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
-.simple-story section p,
-.simple-story section pre,
-.simple-story section ul,
-.simple-story section ol,
-.simple-story section blockquote {
-  font-size: 1.125rem;
-  line-height: 1.5em;
-  font-weight: 300;
-  white-space: normal;
-}
-.simple-story section p,
-.simple-story section pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0 0em;
-  text-indent: 1.5em;
-}
-.simple-story section p:first-child {
-  text-indent: 0;
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .ad {
   background: #eee;
