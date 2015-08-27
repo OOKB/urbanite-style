@@ -9,6 +9,154 @@
   /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Visibility Classes */
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.visible-lg,
+.hidden-sm {
+  display: none;
+  visibility: hidden;
+}
+
+.hide-text {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.show-text {
+  text-indent: 0%;
+  white-space: normal;
+  overflow: visible;
+}
+
+/* floats and clears */
+.left,
+.floatleft,
+.float-left,
+.leftfloat,
+.left-float {
+  float: left;
+}
+
+.right,
+.floatright,
+.float-right,
+.rightfloat,
+.right-float {
+  float: right;
+}
+
+.clear,
+.clearboth,
+.clear-both,
+.both-clear,
+.bothclear {
+  clear: both;
+}
+.clearleft,
+.leftclear,
+.clear-left,
+.left-clear {
+  clear: left;
+}
+.clearright,
+.rightclear,
+.clear-right,
+.right-clear {
+  clear: right;
+}
+
+.add-clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.clearfix,
+.clear-fix,
+.cf,
+.group {
+  &::after {
+     .add-clearfix;
+  }
+}
+
+/*
+  center, left and right align text.
+  it is my personal opinion that you should never use "text-align: justify;" on the web.
+  browsers aren't good enough at typesetting justified text.
+  I have not created those styles for that reason.
+*/
+.text-center,
+.textcenter,
+.center-text,
+.centertext,
+.align-center,
+.center-align,
+.aligncenter,
+.centeralign {
+  text-align: center;
+}
+
+.text-right,
+.right-text,
+.textright,
+.righttext,
+.align-right,
+.right-align,
+.alignright,
+.rightalign {
+  text-align: right;
+}
+
+.text-left,
+.left-text,
+.textleft,
+.lefttext,
+.align-left,
+.left-align,
+.alignleft,
+.leftalign {
+  text-align: left;
+}
+
+/* columnar stuff */
+#wrapper,
+.wrapper,
+.container {
+  margin: 0 auto;
+  padding: 0 1rem 2rem 1rem;
+  width: 100%;
+}
+
+.group,
+.grouped,
+.row {
+  margin: 0 0 2rem 0;
+}
+
+.column,
+.columns {
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
 .one,
 .two,
 .three,
@@ -27,10 +175,41 @@
 
 [class*="offset-by-"]      { .col-offset(00); }
 
+@media (min-width: 30rem) {
+  #wrapper,
+  .wrapper,
+  .container {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    min-width: 30rem;
+    width: 80%;
+  }
+}
+
 @media (min-width: 52em) { /**52em is medium cutoff from BassCss **/
+  #wrapper,
+  .wrapper,
+  .container {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    max-width: 75rem;
+  }
+
+  .group,
+  .grouped,
+  .row {
+    margin: 0 -1rem 2rem -1rem;
+  }
+
+  /* columnar stuff */
+  .column,
   .columns {
     float: left;
+    margin: 0 0 2rem 0;
+    padding: 0 1rem;
   }
+
+  .column.right,
   .columns.right {
     float: right;
   }
